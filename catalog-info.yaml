@@ -8,7 +8,7 @@ metadata:
     system: public-websites
   tags:
     - vue
-    - Gridsome
+    - gridsome
 spec:
   owner: rdev_portal
   templater: cookiecutter
