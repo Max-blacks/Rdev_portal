@@ -1,0 +1,32 @@
+apiVersion: backstage.io/rdev_portal-v1.0.0
+kind: Template
+metadata:
+  name: rdev_portal
+  title: Rdev_portal
+  description: The place to be, for great artists
+  labels:
+    system: public-websites
+  annotations:
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - vue
+    - Gridsome
+spec:
+  owner: rdev_portal
+  templater: cookiecutter
+  type: website
+  path: '.'
+  schema:
+    required:
+      - project_id
+      - description
+    properties:
+      project_id:
+        title: Name
+        type: string
+        description: Unique name of the project
+      description:
+        title: Description
+        type: string
+        description: Help others understand what this website is for.
