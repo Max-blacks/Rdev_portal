@@ -26,7 +26,3 @@ spec:
         title: Name
         type: string
         description: Unique name of the project
-      description:
-        title: Description
-        type: string
-        description: Help others understand what this website is for.
