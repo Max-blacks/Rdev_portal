@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: rdev_portal
+  title: Rdev_portal
+  description: The place to be, for great artists
+  labels:
+    system: public-websites
+  tags:
+    - vue
+    - gridsome
+spec:
+  owner: rdev_portal
+  templater: cookiecutter
+  type: website
+  path: '.'
+  schema:
+    required:
+      - component_id
+    properties:
+      component_id:
+        title: Name
+        type: string
+        description: Unique name of the project
