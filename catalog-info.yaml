@@ -20,7 +20,6 @@ spec:
   schema:
     required:
       - project_id
-      - description
     properties:
       project_id:
         title: Name
